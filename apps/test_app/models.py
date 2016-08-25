@@ -12,6 +12,6 @@ class Blog(models.Model):
 
 class Comment(models.Model):
   blog = models.ForeignKey(Blog)
-  Comment = models.TextField(max_length=1000)
+  comment = models.TextField(max_length=1000)
   created_at = models.DateTimeField(auto_now_add = True)
   updated_at = models.DateTimeField(auto_now = True)
